@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zid-Gb-a2G">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Plus View Controller-->
+        <scene sceneID="L6F-J3-Y99">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="zid-Gb-a2G" customClass="QZPlusViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sfd-mS-40u"/>
+                        <viewControllerLayoutGuide type="bottom" id="DAs-Sj-9lt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BMf-En-uJF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJE-qK-JBT" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <color key="backgroundColor" white="1" alpha="0.95000000000000007" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ny2-nl-CnE">
+                                <rect key="frame" x="122" y="425" width="76" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="Wa4-lo-ZTJ"/>
+                                    <constraint firstAttribute="height" constant="60" id="w1e-NI-e8I"/>
+                                </constraints>
+                                <state key="normal" image="tabbar_btn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickPlusButton:" destination="zid-Gb-a2G" eventType="touchUpInside" id="etp-VT-gy4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRy-TP-0RH">
+                                <rect key="frame" x="48" y="147" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DAs-Sj-9lt" firstAttribute="top" secondItem="MJE-qK-JBT" secondAttribute="bottom" id="Hbx-Vv-hrW"/>
+                            <constraint firstItem="MJE-qK-JBT" firstAttribute="leading" secondItem="BMf-En-uJF" secondAttribute="leading" id="Q9m-tE-Cbp"/>
+                            <constraint firstAttribute="centerX" secondItem="ny2-nl-CnE" secondAttribute="centerX" id="RE7-iR-dtA"/>
+                            <constraint firstItem="MJE-qK-JBT" firstAttribute="top" secondItem="sfd-mS-40u" secondAttribute="bottom" id="ZId-bZ-1BU"/>
+                            <constraint firstItem="DAs-Sj-9lt" firstAttribute="top" secondItem="ny2-nl-CnE" secondAttribute="bottom" constant="-5" id="a52-xB-Bbk"/>
+                            <constraint firstAttribute="trailing" secondItem="MJE-qK-JBT" secondAttribute="trailing" id="jEr-rp-aRb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="button01" destination="HRy-TP-0RH" id="G4F-AB-mCG"/>
+                        <outlet property="plusButton" destination="ny2-nl-CnE" id="F40-8o-khz"/>
+                        <outlet property="plusButtonHeightLayoutConstraint" destination="w1e-NI-e8I" id="KJF-Km-ZQA"/>
+                        <outlet property="plusButtonWidthLayoutConstraint" destination="Wa4-lo-ZTJ" id="1ap-co-Mts"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpV-sh-579" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_btn" width="76" height="60"/>
+    </resources>
+</document>

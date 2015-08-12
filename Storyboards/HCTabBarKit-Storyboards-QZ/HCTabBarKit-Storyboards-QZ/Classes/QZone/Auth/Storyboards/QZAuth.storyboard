@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JaS-0F-Ske">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--动态-->
+        <scene sceneID="GzA-eM-C5f">
+            <objects>
+                <tableViewController id="JaS-0F-Ske" customClass="QZAuthViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nTu-BZ-X7d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="QZCell" textLabel="7oz-FM-KUE" detailTextLabel="9XQ-2i-sDj" style="IBUITableViewCellStyleSubtitle" id="7k9-ik-WGY">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7k9-ik-WGY" id="j2E-GF-s4m">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7oz-FM-KUE">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9XQ-2i-sDj">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="JNm-Ak-VyQ" kind="show" id="dKQ-Vj-Jgg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JaS-0F-Ske" id="FtQ-i2-KSz"/>
+                            <outlet property="delegate" destination="JaS-0F-Ske" id="asd-nx-zMU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="动态" id="rEd-8Z-9Ho"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJA-bX-TgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="364"/>
+        </scene>
+        <!--动态详细-->
+        <scene sceneID="v6M-er-70b">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="JNm-Ak-VyQ" customClass="QZAuthDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="phG-eT-ZmJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="9qU-4U-WBV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E9f-1y-gQU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtN-GY-XeI">
+                                <rect key="frame" x="30" y="50" width="260" height="330"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82555809489999998" green="0.96746519959999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9qU-4U-WBV" firstAttribute="top" secondItem="ZtN-GY-XeI" secondAttribute="bottom" constant="100" id="XBX-sY-C8f"/>
+                            <constraint firstItem="ZtN-GY-XeI" firstAttribute="top" secondItem="phG-eT-ZmJ" secondAttribute="bottom" constant="30" id="YfJ-T5-fBe"/>
+                            <constraint firstAttribute="trailing" secondItem="ZtN-GY-XeI" secondAttribute="trailing" constant="30" id="cZI-Qy-5qb"/>
+                            <constraint firstItem="ZtN-GY-XeI" firstAttribute="leading" secondItem="E9f-1y-gQU" secondAttribute="leading" constant="30" id="zMX-5T-v4g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="动态详细" id="F8m-aZ-zCf">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="ThE-yn-7s1">
+                            <connections>
+                                <action selector="didClickBack:" destination="JNm-Ak-VyQ" id="Nuf-qM-fg8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="textLabel" destination="ZtN-GY-XeI" id="ppY-XV-rPQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hd7-6L-6x7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144" y="364"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module HCTabBarKit {
+  umbrella header "HCTabBarKit.h"
+
+  export *
+  module * { export * }
+}

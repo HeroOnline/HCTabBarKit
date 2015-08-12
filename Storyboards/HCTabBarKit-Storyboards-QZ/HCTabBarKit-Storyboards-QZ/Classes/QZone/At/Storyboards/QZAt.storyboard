@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ts4-jg-LXT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--与我有关-->
+        <scene sceneID="1Mt-vI-0Dw">
+            <objects>
+                <tableViewController id="ts4-jg-LXT" customClass="QZAtViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nj3-69-utJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="QZCell" textLabel="qcM-DT-Icc" detailTextLabel="QY6-Lv-QEi" style="IBUITableViewCellStyleSubtitle" id="1mA-6A-Neg">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1mA-6A-Neg" id="08x-wG-ZYe">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qcM-DT-Icc">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QY6-Lv-QEi">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Ocz-WG-5o7" kind="show" id="TQP-7r-3gk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ts4-jg-LXT" id="pDg-ZI-FUx"/>
+                            <outlet property="delegate" destination="ts4-jg-LXT" id="nLY-ka-bdd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="与我有关" id="6pA-55-Ctq"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ls3-gx-W9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="387"/>
+        </scene>
+        <!--与我有关详细-->
+        <scene sceneID="Bh1-Io-MNZ">
+            <objects>
+                <viewController id="Ocz-WG-5o7" customClass="QZAtDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qmm-2p-lK1"/>
+                        <viewControllerLayoutGuide type="bottom" id="b0v-d0-omr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rPj-a1-6lA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qi0-6N-4x6">
+                                <rect key="frame" x="20" y="94" width="280" height="286"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qi0-6N-4x6" firstAttribute="top" secondItem="Qmm-2p-lK1" secondAttribute="bottom" constant="30" id="1FX-8r-drK"/>
+                            <constraint firstAttribute="trailing" secondItem="Qi0-6N-4x6" secondAttribute="trailing" constant="20" id="Fru-Jp-wQr"/>
+                            <constraint firstItem="Qi0-6N-4x6" firstAttribute="leading" secondItem="rPj-a1-6lA" secondAttribute="leading" constant="20" id="Le9-bX-aDq"/>
+                            <constraint firstItem="b0v-d0-omr" firstAttribute="top" secondItem="Qi0-6N-4x6" secondAttribute="bottom" constant="100" id="wda-xF-hqa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="与我有关详细" id="tax-lM-fGz">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="aW2-SG-wRt">
+                            <connections>
+                                <action selector="didClickBack:" destination="Ocz-WG-5o7" id="cpN-Nn-yni"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="textLabel" destination="Qi0-6N-4x6" id="kDz-lf-5wR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ee-aW-tdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="365"/>
+        </scene>
+    </scenes>
+</document>

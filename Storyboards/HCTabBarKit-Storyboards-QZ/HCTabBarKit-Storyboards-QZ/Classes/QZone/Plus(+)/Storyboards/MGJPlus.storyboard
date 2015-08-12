@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g9e-E7-CZs">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Plus View Controller-->
+        <scene sceneID="Abg-xt-00z">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" id="g9e-E7-CZs" customClass="MGJPlusViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="02O-XY-3Gm"/>
+                        <viewControllerLayoutGuide type="bottom" id="RlL-1f-eYq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hhb-bI-om4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71m-ra-0hP" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0j-A6-4zo" userLabel="Button(Right)">
+                                        <rect key="frame" x="170" y="180" width="120" height="200"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDv-CC-lQn" userLabel="Button(Left)">
+                                        <rect key="frame" x="30" y="180" width="120" height="200"/>
+                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="9gw-Fu-AfB"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkA-02-irm" userLabel="Button(+)">
+                                        <rect key="frame" x="122" y="425" width="76" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="1nK-LG-FJK"/>
+                                            <constraint firstAttribute="height" constant="60" id="Diy-RE-iBC"/>
+                                        </constraints>
+                                        <state key="normal" image="tabbar_btn">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.35000000000000003" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EkA-02-irm" secondAttribute="bottom" constant="-5" id="6gJ-rB-654"/>
+                                    <constraint firstItem="NDv-CC-lQn" firstAttribute="width" secondItem="D0j-A6-4zo" secondAttribute="width" id="HV0-f8-08l"/>
+                                    <constraint firstAttribute="centerX" secondItem="EkA-02-irm" secondAttribute="centerX" id="NcJ-6z-WRI"/>
+                                    <constraint firstAttribute="trailing" secondItem="D0j-A6-4zo" secondAttribute="trailing" constant="30" id="cJ1-3e-YDt"/>
+                                    <constraint firstItem="NDv-CC-lQn" firstAttribute="leading" secondItem="71m-ra-0hP" secondAttribute="leading" constant="30" id="hdc-8X-c7Y"/>
+                                    <constraint firstItem="D0j-A6-4zo" firstAttribute="leading" secondItem="NDv-CC-lQn" secondAttribute="trailing" constant="20" id="j1F-vR-E7e"/>
+                                    <constraint firstAttribute="bottom" secondItem="NDv-CC-lQn" secondAttribute="bottom" constant="100" id="pkc-sG-VNU"/>
+                                    <constraint firstItem="NDv-CC-lQn" firstAttribute="height" secondItem="D0j-A6-4zo" secondAttribute="height" id="wxc-ij-pK6"/>
+                                    <constraint firstItem="NDv-CC-lQn" firstAttribute="bottom" secondItem="D0j-A6-4zo" secondAttribute="bottom" id="zsx-le-6Hb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="71m-ra-0hP" secondAttribute="trailing" id="Ksg-N9-wmI"/>
+                            <constraint firstItem="71m-ra-0hP" firstAttribute="top" secondItem="hhb-bI-om4" secondAttribute="top" id="iNZ-YF-uUT"/>
+                            <constraint firstItem="RlL-1f-eYq" firstAttribute="top" secondItem="71m-ra-0hP" secondAttribute="bottom" id="iuj-fb-sAE"/>
+                            <constraint firstItem="71m-ra-0hP" firstAttribute="leading" secondItem="hhb-bI-om4" secondAttribute="leading" id="ljY-kp-JD4"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTG-4z-smC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334" y="352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_btn" width="76" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cCh-Cw-lbc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="Z0H-TL-Lv0">
+            <objects>
+                <viewController id="N2N-CH-Vdh" customClass="QZLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p58-Fc-pSM"/>
+                        <viewControllerLayoutGuide type="bottom" id="esg-MR-MYJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ANh-Ff-JFl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9j-iT-TLQ">
+                                <rect key="frame" x="135" y="215" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="PvZ-cy-y2F"/>
+                                    <constraint firstAttribute="height" constant="50" id="lLH-Yo-ydY"/>
+                                </constraints>
+                                <state key="normal" title="登入">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickLogin:" destination="N2N-CH-Vdh" eventType="touchUpInside" id="AAs-rV-lAz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="q9j-iT-TLQ" secondAttribute="centerY" id="6qq-no-Qkk"/>
+                            <constraint firstAttribute="centerX" secondItem="q9j-iT-TLQ" secondAttribute="centerX" id="Tk2-uM-PsX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="Nzh-rh-YBs">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fsL-kI-waQ">
+                            <connections>
+                                <action selector="didClickCancel:" destination="N2N-CH-Vdh" id="z4d-Xl-jkn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2c9-SM-3Rj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="-8"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bhv-gy-eP3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cCh-Cw-lbc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="swJ-Tm-3LV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N2N-CH-Vdh" kind="relationship" relationship="rootViewController" id="NYc-Fz-BPb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7BA-kg-nYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="-8"/>
+        </scene>
+    </scenes>
+</document>
