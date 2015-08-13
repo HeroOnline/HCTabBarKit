@@ -17,7 +17,7 @@
 
 //static CGFloat const QZoneTabBarTitleDefaultFontSize = 10.0f;
 
-static NSTimeInterval const QZoneAnimationDuration = 1.0f;
+//static NSTimeInterval const QZoneAnimationDuration = 1.0f;
 
 
 
@@ -545,101 +545,11 @@ static NSTimeInterval const QZoneAnimationDuration = 1.0f;
     
     
    CGRect frame = [tabbarButton convertRect:tabbarButton.frame toView:viewController.plusButton];
-    
-//      viewController.view.backgroundColor = [UIColor clearColor];
-    
-//    viewController.modalPresentationStyle = UIModalPresentationCurrentContext;
-    
-//    viewController.modalPresentationStyle = UIModalPresentationCurrentContext;/*设置这个属性背景就是透明的，而不是黑色的了*/
-    
-    
-    /*
-     
-     显示一个透明背景的ViewController在另一个ViewController上 
-     
-     
-     http://blog.csdn.net/jasonblog/article/details/17172969
-     
-     http://blog.csdn.net/meegomeego/article/details/8114362
-     
-     http://stackoverflow.com/questions/587681/how-to-use-presentmodalviewcontroller-to-create-a-transparent-view/5579145#
-     
-     viewController.view.backgroundColor = [UIColor clearColor];
-     rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
-     [rootViewController presentModalViewController:viewController animated:YES];
-     
-     
-     这里有两个点：一是设置modalPresentationStyle为UIModalPresentationCurrentContext，
-     
-     二是需要在rootViewController上操作。
-     
-     */
-    
-    
-    /*
-     
-     http://blog.csdn.net/xunyn/article/details/20628021
-     
-     ModalView和Navigation混用 
-     
-     使用UIViewController时，将viewcontroller放入UINavigationController的栈里，和将viewcontroller用modalView的方式显示出来时，混用时，需要注意的有：
-     
-     1 不可以将已经压入Navigation栈的ViewController，使用ModalViewController弹出，会出现“
-     
-     'NSInvalidArgumentException', reason: 'Application tried to present modally an active controller
-     ”的错误
-     
-     2 可以将栈中有ViewController的NavigationController，使用presentModalViewController弹出，并且支持NavigationController继续push viewController 进栈，但一旦执行到dismiss，便会回到ModalViewController弹出的地方。
-     
-
-     
-     */
-   
-    // self 不是 Root
-//    self.modalPresentationStyle = UIModalPresentationCurrentContext;
-    
-    // reason: 'Application tried to present modally an active controller <QZTabBarController: 0x7f9942127290>.'
 
     
     viewController.view.backgroundColor = [UIColor clearColor];
     
-    // reason: 'Application tried to present modally an active controller <QZTabBarController:
-//    [self addChildViewController:viewController];
     
-//    self.modalPresentationStyle = UIModalPresentationCurrentContext;
-    
-//   UIViewController *currentRootViewController = self.viewControllers[selectedIndex];
-    
-    // 必须 ，
-    // reason: 'Application tried to present modally an active controller <UIViewController: 0x7f890ae0a370>.'
-//    [currentRootViewController addChildViewController:viewController];
-    
-//    currentRootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
-    
-   
-//  UIViewController *rootViewController =  [UIApplication sharedApplication].keyWindow.rootViewController;
-//    
-////    [rootViewController addChildViewController:viewController];
-//    
-//    rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
-//    
-//    [rootViewController addChildViewController:viewController];
-    
-//    HCLog(@"rootViewController.parentViewController=%@", rootViewController.parentViewController);
-    
-    
-//    CGRect frame = CGRectMake(10, 10, 100, 100);
-    
-//    viewController.plusButton.frame = frame;
-    
-    // user defined inspected property on (UIViewController): [<UIViewController 0x137519bc0> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key storyboardName
-    // 由于 Main.storyboard 中 对应的 Plus 控制器设置  storyboardName
-    
-//    viewController.plusButton.frame = tabbarButton.frame;
-    
-   
-    
-//    HCLog(@"tabbarButton.frame=%@, viewController.destinationFrame=%@", NSStringFromCGRect(tabbarButton.frame), NSStringFromCGRect(viewController.destinationFrame));
     
      viewController.destinationFrame = frame;
     
@@ -660,20 +570,6 @@ static NSTimeInterval const QZoneAnimationDuration = 1.0f;
         HCLog(@"presentViewController: # ...");
         
     }];
-    
-    
-    
-    
-    // 使用 UINavigationController
-    
-    // reason: 'Application tried to present modally an active controller <UINavigationController: 0x7fb01ac2f580>.'
-
-    
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    
-//    navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
-    
-//    [navigationController presentViewController:viewController animated:NO completion:nil];
     
 }
 
