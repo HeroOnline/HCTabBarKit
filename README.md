@@ -9,4 +9,4 @@
 
 <br/><br/><br/>
 #<b>QQ空间TabBar效果图</b> <br/>
-<img width='100' height='100' src='https://github.com/HeroOnline/HCTabBarKit/blob/master/Resources/QQZone.jpg'/>
+<img src='https://github.com/HeroOnline/HCTabBarKit/blob/master/Resources/QQZone.jpg'/>
