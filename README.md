@@ -8,5 +8,12 @@
 
 
 <br/><br/><br/>
-#<b>QQ空间TabBar效果图</b> <br/>
+#<b>QQ空间TabBar效果图</b> <br/><br/>
 <img src='https://github.com/HeroOnline/HCTabBarKit/blob/master/Resources/QQZone.jpg'/>
+
+<br/><br/><br/>
+#<b>QQ空间TabBar效果图－横屏</b> <br/><br/>
+<img src='https://github.com/HeroOnline/HCTabBarKit/blob/master/Resources/QQZone2.jpg'/>
+
+<br/><br/><br/>
+
