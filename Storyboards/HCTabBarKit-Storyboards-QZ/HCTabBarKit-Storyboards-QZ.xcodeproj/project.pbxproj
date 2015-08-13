@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		671052671B7C232500B09F5A /* HCTabBarKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 671052661B7C232500B09F5A /* HCTabBarKit.bundle */; };
-		671052691B7C258F00B09F5A /* HCTabBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671052681B7C258F00B09F5A /* HCTabBarKit.framework */; };
+		671052CD1B7CE3B500B09F5A /* HCTabBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671052CC1B7CE3B500B09F5A /* HCTabBarKit.framework */; };
 		6773FBE61B7B35E00041A8B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FBE51B7B35E00041A8B1 /* main.m */; };
 		6773FBF11B7B35E00041A8B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6773FBF01B7B35E00041A8B1 /* Images.xcassets */; };
 		6773FBF41B7B35E00041A8B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6773FBF21B7B35E00041A8B1 /* LaunchScreen.xib */; };
@@ -57,7 +57,7 @@
 
 /* Begin PBXFileReference section */
 		671052661B7C232500B09F5A /* HCTabBarKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HCTabBarKit.bundle; sourceTree = "<group>"; };
-		671052681B7C258F00B09F5A /* HCTabBarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCTabBarKit.framework; sourceTree = "<group>"; };
+		671052CC1B7CE3B500B09F5A /* HCTabBarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCTabBarKit.framework; sourceTree = "<group>"; };
 		6773FBE01B7B35DF0041A8B1 /* HCTabBarKit-Storyboards-QZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCTabBarKit-Storyboards-QZ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6773FBE41B7B35E00041A8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6773FBE51B7B35E00041A8B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671052691B7C258F00B09F5A /* HCTabBarKit.framework in Frameworks */,
+				671052CD1B7CE3B500B09F5A /* HCTabBarKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +160,7 @@
 		6773FBE21B7B35DF0041A8B1 /* HCTabBarKit-Storyboards-QZ */ = {
 			isa = PBXGroup;
 			children = (
-				671052681B7C258F00B09F5A /* HCTabBarKit.framework */,
+				671052CC1B7CE3B500B09F5A /* HCTabBarKit.framework */,
 				671052661B7C232500B09F5A /* HCTabBarKit.bundle */,
 				6773FD831B7B9CCA0041A8B1 /* Classes */,
 				6773FBF01B7B35E00041A8B1 /* Images.xcassets */,
@@ -889,6 +889,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HCTabBarKit-Storyboards-QZ",
 					"$(PROJECT_DIR)/HCTabBarKit-Storyboards-QZ/Classes",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "HCTabBarKit-Storyboards-QZ/HCTabBarKit-Storyboards-QZ-PrefixHeader.pch";
 				INFOPLIST_FILE = "HCTabBarKit-Storyboards-QZ/Info.plist";
@@ -913,6 +914,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HCTabBarKit-Storyboards-QZ",
 					"$(PROJECT_DIR)/HCTabBarKit-Storyboards-QZ/Classes",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "HCTabBarKit-Storyboards-QZ/HCTabBarKit-Storyboards-QZ-PrefixHeader.pch";
 				INFOPLIST_FILE = "HCTabBarKit-Storyboards-QZ/Info.plist";

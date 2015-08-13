@@ -296,7 +296,10 @@ static NSTimeInterval const QZoneAnimationDuration = 1.0f;
             
             NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"User"];
             
-            User *user = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+            User *user = nil;
+            
+            if (data)
+                user = [NSKeyedUnarchiver unarchiveObjectWithData:data];
             
             if (user.loginState) {
                 //  已登入，直接进入

@@ -27,7 +27,9 @@
     
     NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"User"];
     
-    self.user = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    if (data)
+        self.user = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    
     
     // 不需要，因为进来就必须有权限的
 //    self.logoutBarButtonItem.enabled = user.loginState;

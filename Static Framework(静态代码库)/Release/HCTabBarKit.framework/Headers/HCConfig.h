@@ -14,8 +14,6 @@
 
 #define HCStrong __strong typeof(self) strongSelf = weakSelf;
 
-#define HCDEBUG YES
-
 #ifdef HCDEBUG
 #define HCLog(format, ...) NSLog(@"%s(%d): " format, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
