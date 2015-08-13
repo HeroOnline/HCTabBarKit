@@ -1,13 +1,13 @@
 //
-//  HCTabBarKit-Storyboards-QZ-PrefixHeader.pch
-//  HCTabBarKit-Storyboards-QZ
+//  HCTabBarKit-PureCode-WeiBo-PrefixHeader.pch
+//  HCTabBarKit-PureCode-WeiBo
 //
-//  Created by HeroCao on 15/8/12.
+//  Created by HeroCao on 15/8/13.
 //  Copyright (c) 2015年 HC. All rights reserved.
 //
 
-#ifndef HCTabBarKit_Storyboards_QZ_HCTabBarKit_Storyboards_QZ_PrefixHeader_pch
-#define HCTabBarKit_Storyboards_QZ_HCTabBarKit_Storyboards_QZ_PrefixHeader_pch
+#ifndef HCTabBarKit_PureCode_WeiBo_HCTabBarKit_PureCode_WeiBo_PrefixHeader_pch
+#define HCTabBarKit_PureCode_WeiBo_HCTabBarKit_PureCode_WeiBo_PrefixHeader_pch
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.

@@ -199,7 +199,7 @@ static NSTimeInterval const QZoneAnimationDuration = 1.0f;
 //    tabBarBadgeItem01.backgroundImage = [UIImage imageNamed:@"mgj_tabbar_badge"];
     
     HCTabBarBadgeItem *tabBarBadgeItem02 = [HCTabBarBadgeItem badgeItem];
-    tabBarBadgeItem02.value = @"11";
+    tabBarBadgeItem02.value = @"88";
     tabBarButtonItem02.tabBarBadgeItem = tabBarBadgeItem02;
     
      HCTabBarBadgeItem *tabBarBadgeItem04 = [HCTabBarBadgeItem badgeItem];
@@ -214,7 +214,7 @@ static NSTimeInterval const QZoneAnimationDuration = 1.0f;
     tabBarButtonItem04.tabBarBadgeItem = tabBarBadgeItem04;
     
     HCTabBarBadgeItem *tabBarBadgeItem05 = [HCTabBarBadgeItem badgeItem];
-    tabBarBadgeItem05.value = @"11";
+    tabBarBadgeItem05.value = @"888";
 //    tabBarBadgeItem05.backgroundImage = [UIImage imageNamed:@"NewYearHonbao_Button"];
     
     tabBarBadgeItem05.badgeInsetEdgesLeft = 5;
