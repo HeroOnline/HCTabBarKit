@@ -18,6 +18,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    
+    
     // Override point for customization after application launch.
     
 //    HCLog(@"didFinishLaunchingWithOptions # ...");
@@ -67,6 +71,10 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+//    [HCDispatchSignalHub class];
+//    
+//    [HCNavigationController class];
 }
 
 @end

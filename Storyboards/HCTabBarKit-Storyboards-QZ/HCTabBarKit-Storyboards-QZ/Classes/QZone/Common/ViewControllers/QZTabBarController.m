@@ -140,7 +140,7 @@ static NSTimeInterval const QZoneAnimationDuration = 1.0f;
 //    tabBarButtonItem03.imageHeight
     
     
-//    tabBarButtonItem03.adjustsImageWhenHighlighted = YES;
+    tabBarButtonItem03.adjustsImageWhenHighlighted = YES;
     
     // 我的空间
     NSMutableDictionary *dict4 = [NSMutableDictionary dictionaryWithCapacity:2];

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		671052671B7C232500B09F5A /* HCTabBarKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 671052661B7C232500B09F5A /* HCTabBarKit.bundle */; };
+		671052691B7C258F00B09F5A /* HCTabBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671052681B7C258F00B09F5A /* HCTabBarKit.framework */; };
 		6773FBE61B7B35E00041A8B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FBE51B7B35E00041A8B1 /* main.m */; };
 		6773FBF11B7B35E00041A8B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6773FBF01B7B35E00041A8B1 /* Images.xcassets */; };
 		6773FBF41B7B35E00041A8B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6773FBF21B7B35E00041A8B1 /* LaunchScreen.xib */; };
 		6773FC001B7B35E00041A8B1 /* HCTabBarKit_Storyboards_QZTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FBFF1B7B35E00041A8B1 /* HCTabBarKit_Storyboards_QZTests.m */; };
-		6773FD191B7B59D80041A8B1 /* HCTabBarKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6773FD181B7B59D80041A8B1 /* HCTabBarKit.bundle */; };
-		6773FD821B7B9A9C0041A8B1 /* HCTabBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6773FD811B7B9A9C0041A8B1 /* HCTabBarKit.framework */; };
 		6773FDE31B7B9CCA0041A8B1 /* UIColor+HCTabBarKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FD861B7B9CCA0041A8B1 /* UIColor+HCTabBarKit.m */; };
 		6773FDE41B7B9CCB0041A8B1 /* UIView+HCTabBarKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FD871B7B9CCA0041A8B1 /* UIView+HCTabBarKit.m */; };
 		6773FDE51B7B9CCB0041A8B1 /* UIImage+HCTabBarKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FD8A1B7B9CCA0041A8B1 /* UIImage+HCTabBarKit.m */; };
@@ -56,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		671052661B7C232500B09F5A /* HCTabBarKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HCTabBarKit.bundle; sourceTree = "<group>"; };
+		671052681B7C258F00B09F5A /* HCTabBarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCTabBarKit.framework; sourceTree = "<group>"; };
 		6773FBE01B7B35DF0041A8B1 /* HCTabBarKit-Storyboards-QZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCTabBarKit-Storyboards-QZ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6773FBE41B7B35E00041A8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6773FBE51B7B35E00041A8B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,8 +67,6 @@
 		6773FBFE1B7B35E00041A8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6773FBFF1B7B35E00041A8B1 /* HCTabBarKit_Storyboards_QZTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCTabBarKit_Storyboards_QZTests.m; sourceTree = "<group>"; };
 		6773FC8B1B7B3B930041A8B1 /* HCTabBarKit-Storyboards-QZ-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HCTabBarKit-Storyboards-QZ-PrefixHeader.pch"; sourceTree = "<group>"; };
-		6773FD181B7B59D80041A8B1 /* HCTabBarKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HCTabBarKit.bundle; sourceTree = "<group>"; };
-		6773FD811B7B9A9C0041A8B1 /* HCTabBarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCTabBarKit.framework; sourceTree = "<group>"; };
 		6773FD851B7B9CCA0041A8B1 /* UIColor+HCTabBarKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HCTabBarKit.h"; sourceTree = "<group>"; };
 		6773FD861B7B9CCA0041A8B1 /* UIColor+HCTabBarKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HCTabBarKit.m"; sourceTree = "<group>"; };
 		6773FD871B7B9CCA0041A8B1 /* UIView+HCTabBarKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HCTabBarKit.m"; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6773FD821B7B9A9C0041A8B1 /* HCTabBarKit.framework in Frameworks */,
+				671052691B7C258F00B09F5A /* HCTabBarKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +160,8 @@
 		6773FBE21B7B35DF0041A8B1 /* HCTabBarKit-Storyboards-QZ */ = {
 			isa = PBXGroup;
 			children = (
-				6773FD811B7B9A9C0041A8B1 /* HCTabBarKit.framework */,
-				6773FD181B7B59D80041A8B1 /* HCTabBarKit.bundle */,
+				671052681B7C258F00B09F5A /* HCTabBarKit.framework */,
+				671052661B7C232500B09F5A /* HCTabBarKit.bundle */,
 				6773FD831B7B9CCA0041A8B1 /* Classes */,
 				6773FBF01B7B35E00041A8B1 /* Images.xcassets */,
 				6773FBF21B7B35E00041A8B1 /* LaunchScreen.xib */,
@@ -681,6 +681,7 @@
 				TargetAttributes = {
 					6773FBDF1B7B35DF0041A8B1 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = UVGYWCFCGC;
 					};
 					6773FBF81B7B35E00041A8B1 = {
 						CreatedOnToolsVersion = 6.4;
@@ -713,8 +714,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6773FDE61B7B9CCB0041A8B1 /* QZSpace.storyboard in Resources */,
+				671052671B7C232500B09F5A /* HCTabBarKit.bundle in Resources */,
 				6773FDF81B7B9CCB0041A8B1 /* QZoneMain.storyboard in Resources */,
-				6773FD191B7B59D80041A8B1 /* HCTabBarKit.bundle in Resources */,
 				6773FBF41B7B35E00041A8B1 /* LaunchScreen.xib in Resources */,
 				6773FDF01B7B9CCB0041A8B1 /* MGJPlus.storyboard in Resources */,
 				6773FDFD1B7B9CCB0041A8B1 /* QZLogin.storyboard in Resources */,
@@ -882,16 +883,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HCTabBarKit-Storyboards-QZ",
+					"$(PROJECT_DIR)/HCTabBarKit-Storyboards-QZ/Classes",
 				);
 				GCC_PREFIX_HEADER = "HCTabBarKit-Storyboards-QZ/HCTabBarKit-Storyboards-QZ-PrefixHeader.pch";
 				INFOPLIST_FILE = "HCTabBarKit-Storyboards-QZ/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -899,16 +907,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HCTabBarKit-Storyboards-QZ",
+					"$(PROJECT_DIR)/HCTabBarKit-Storyboards-QZ/Classes",
 				);
 				GCC_PREFIX_HEADER = "HCTabBarKit-Storyboards-QZ/HCTabBarKit-Storyboards-QZ-PrefixHeader.pch";
 				INFOPLIST_FILE = "HCTabBarKit-Storyboards-QZ/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
