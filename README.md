@@ -35,3 +35,34 @@ iOS 7.0+ 、Xcode 6.0＋
 
 <br/><br/><br/>
 
+#<b>微博效果图01</b> <br/><br/>
+<img src='https://github.com/HeroOnline/HCTabBarKit/blob/master/Resources/weibo01.png'/>
+
+<br/><br/><br/>
+
+#<b>微博效果图02－中间＋效果</b> <br/><br/>
+<img src='https://github.com/HeroOnline/HCTabBarKit/blob/master/Resources/weibo02.png'/>
+
+<br/><br/><br/>
+
+#<b>微博效果图03-需要权限验证才能进入Profile Tab</b> <br/><br/>
+<img src='https://github.com/HeroOnline/HCTabBarKit/blob/master/Resources/weibo03.png'/>
+
+
+
+<br/><br/><br/>
+
+#<b>微博效果图04－登入成功之后才能切换到Profile Tab</b> <br/><br/>
+<img src='https://github.com/HeroOnline/HCTabBarKit/blob/master/Resources/weibo04.png'/>
+
+
+<br/><br/><br/>
+
+#<b>微博效果图05</b> <br/><br/>
+<img src='https://github.com/HeroOnline/HCTabBarKit/blob/master/Resources/weibo05.png'/>
+
+
+<br/><br/><br/>
+
+
+
