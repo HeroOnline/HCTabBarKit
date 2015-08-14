@@ -5,11 +5,11 @@
 天朝以及全球最牛逼的TabBar框架：<b>HCTabBarKit</b>
 
 
-支持淘宝，天猫，微信，QQ空间，QQ，微博，京东，楚楚街，美丽说，美团，支付宝，唯品团，1号店，微视等等
+支持淘宝，天猫，微信，QQ空间，QQ，微博，京东，楚楚街，美丽说，美团，支付宝，唯品团，1号店，微视等等 <br/><br/>
 
-作者：HeroCao
-邮箱：heroonlinecao@gmail.com、heroonlinecao@126.com 
-QQ群：482682853，验证信息：HCTabBarKit
+作者：HeroCao <br/>
+邮箱：heroonlinecao@gmail.com、heroonlinecao@126.com  <br/>
+QQ群：482682853，验证信息：HCTabBarKit <br/><br/>
 
 #Requirements【要求】
 iOS 7.0+ 、Xcode 6.0＋
