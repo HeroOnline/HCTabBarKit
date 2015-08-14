@@ -19,8 +19,6 @@
 
 //static NSTimeInterval const QZoneAnimationDuration = 1.0f;
 
-
-
 @interface QZTabBarController ()
 
 @property (nonatomic, weak) QZPlusView *plusView;
@@ -31,8 +29,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    
 }
 
 - (void)hc_initialize {

@@ -35,22 +35,14 @@
 }
 
 - (IBAction)didClickLogin:(UIButton *)sender {
-    
-    NSLog(@"_user=%@, self.user=%@", _user, self.user);
-    
     self.user.loginState = YES;
-    
     [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:self.user] forKey:@"User"];
     
+    // 内存管理
     HCWeak
     
     [self dismissViewControllerAnimated:YES completion:^{
-    
         // 跳转到目标Tab
-        
-        HCLog(@"weakSelf.tabBarController=%@, weakSelf.tabIndex=%ld, weakSelf.hc_tabBarController=%@", weakSelf.tabBarController, weakSelf.tabIndex, weakSelf.hc_tabBarController);
-        
-        
         [weakSelf.hc_tabBarController.hc_tabBar switchTabWithIndex:weakSelf.tabIndex];
         
     }];

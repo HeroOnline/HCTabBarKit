@@ -390,10 +390,10 @@
 		6773FDA91B7B9CCA0041A8B1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6773FDAA1B7B9CCA0041A8B1 /* QZAuthDetailViewController.m */,
 				6773FDAB1B7B9CCA0041A8B1 /* QZAuthViewController.h */,
-				6773FDAC1B7B9CCA0041A8B1 /* QZAuthDetailViewController.h */,
 				6773FDAD1B7B9CCA0041A8B1 /* QZAuthViewController.m */,
+				6773FDAC1B7B9CCA0041A8B1 /* QZAuthDetailViewController.h */,
+				6773FDAA1B7B9CCA0041A8B1 /* QZAuthDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -588,8 +588,8 @@
 		6773FDDF1B7B9CCA0041A8B1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6773FDE01B7B9CCA0041A8B1 /* QZLoginViewController.m */,
 				6773FDE11B7B9CCA0041A8B1 /* QZLoginViewController.h */,
+				6773FDE01B7B9CCA0041A8B1 /* QZLoginViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

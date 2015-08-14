@@ -44,9 +44,7 @@
     [detailAttributedString addAttributes:@{NSForegroundColorAttributeName: [UIColor colorForRandom]} range:NSMakeRange(0, bullB.title.length)];
     [detailAttributedString addAttributes:@{NSForegroundColorAttributeName: [UIColor redColor], NSFontAttributeName: [UIFont boldSystemFontOfSize:26.0]} range:NSMakeRange(bullB.title.length - 11, 11)];
     cell.textLabel.attributedText = detailAttributedString;
-//    cell.textLabel.text = bullB.title;
     cell.detailTextLabel.text = bullB.detail;
-    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -55,14 +53,6 @@
     
     BullB *bullB = self.dataset[indexPath.row];
     bullB.index = indexPath.row;
-    // 取消选中
-//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-//    NSLog(@"QZBaseTableViewController # didSelectRowAtIndexPath: # row=%ld, topViewController=%@, visibleViewController=%@", indexPath.row, self.navigationController.topViewController, self.navigationController.visibleViewController);
-    
-//    [self.navigationController pushViewController:nil animated:NO];
-
-    
     [self.destinationViewController setValue:bullB forKey:@"bullB"];
 }
 
@@ -82,7 +72,6 @@
     [super prepareForSegue:segue sender:sender];
     
     self.destinationViewController = segue.destinationViewController;
-    
 }
 
 #pragma mark - public methods 

@@ -11,9 +11,6 @@
 
 @interface QZAtViewController ()
 
-//// 如果是需要push控制器，需要定义 BOOL 类型的hc_canInteractivePopGesture 属性，处理屏幕左侧手势识别（返回上一层控制器）
-//@property (nonatomic, readonly) BOOL hc_canInteractivePopGesture;
-
 @end
 
 @implementation QZAtViewController
