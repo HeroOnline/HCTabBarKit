@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		671052DD1B7CEA5F00B09F5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 671052DC1B7CEA5F00B09F5A /* main.m */; };
-		671052E01B7CEA5F00B09F5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 671052DF1B7CEA5F00B09F5A /* AppDelegate.m */; };
-		671052E31B7CEA6000B09F5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671052E21B7CEA6000B09F5A /* ViewController.m */; };
-		671052E61B7CEA6000B09F5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671052E41B7CEA6000B09F5A /* Main.storyboard */; };
+		671052E01B7CEA5F00B09F5A /* WBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 671052DF1B7CEA5F00B09F5A /* WBAppDelegate.m */; };
 		671052E81B7CEA6100B09F5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671052E71B7CEA6100B09F5A /* Images.xcassets */; };
 		671052EB1B7CEA6100B09F5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 671052E91B7CEA6100B09F5A /* LaunchScreen.xib */; };
 		671052F71B7CEA6400B09F5A /* HCTabBarKit_PureCode_WeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671052F61B7CEA6400B09F5A /* HCTabBarKit_PureCode_WeiBoTests.m */; };
-		671053021B7CEAE700B09F5A /* HCTabBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671053011B7CEAE700B09F5A /* HCTabBarKit.framework */; };
 		671053041B7CEAF300B09F5A /* HCTabBarKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 671053031B7CEAF300B09F5A /* HCTabBarKit.bundle */; };
+		677FD7601B7D71160042E632 /* HCTabBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677FD75F1B7D71160042E632 /* HCTabBarKit.framework */; };
+		677FD78A1B7D73D00042E632 /* WBTabBarControlle.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7891B7D73D00042E632 /* WBTabBarControlle.m */; };
+		677FD7911B7D75460042E632 /* UIColor+HCTabBarKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD78C1B7D75460042E632 /* UIColor+HCTabBarKit.m */; };
+		677FD7921B7D75460042E632 /* UIImage+HCTabBarKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD78E1B7D75460042E632 /* UIImage+HCTabBarKit.m */; };
+		677FD7931B7D75460042E632 /* UIView+HCTabBarKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7901B7D75460042E632 /* UIView+HCTabBarKit.m */; };
+		677FD79F1B7D79A90042E632 /* WBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD79D1B7D79A90042E632 /* WBLoginViewController.m */; };
+		677FD7A01B7D79A90042E632 /* WBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677FD79E1B7D79A90042E632 /* WBLoginViewController.xib */; };
+		677FD7A31B7D7A180042E632 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7A21B7D7A180042E632 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,19 +37,29 @@
 		671052D71B7CEA5F00B09F5A /* HCTabBarKit-PureCode-WeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCTabBarKit-PureCode-WeiBo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		671052DB1B7CEA5F00B09F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		671052DC1B7CEA5F00B09F5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		671052DE1B7CEA5F00B09F5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		671052DF1B7CEA5F00B09F5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		671052E11B7CEA5F00B09F5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		671052E21B7CEA6000B09F5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		671052E51B7CEA6000B09F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		671052DE1B7CEA5F00B09F5A /* WBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WBAppDelegate.h; path = ../../../WBAppDelegate.h; sourceTree = "<group>"; };
+		671052DF1B7CEA5F00B09F5A /* WBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WBAppDelegate.m; path = ../../../WBAppDelegate.m; sourceTree = "<group>"; };
 		671052E71B7CEA6100B09F5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		671052EA1B7CEA6100B09F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		671052F01B7CEA6100B09F5A /* HCTabBarKit-PureCode-WeiBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HCTabBarKit-PureCode-WeiBoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		671052F51B7CEA6400B09F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		671052F61B7CEA6400B09F5A /* HCTabBarKit_PureCode_WeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCTabBarKit_PureCode_WeiBoTests.m; sourceTree = "<group>"; };
 		671053001B7CEA9400B09F5A /* HCTabBarKit-PureCode-WeiBo-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HCTabBarKit-PureCode-WeiBo-PrefixHeader.pch"; sourceTree = "<group>"; };
-		671053011B7CEAE700B09F5A /* HCTabBarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCTabBarKit.framework; sourceTree = "<group>"; };
 		671053031B7CEAF300B09F5A /* HCTabBarKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HCTabBarKit.bundle; sourceTree = "<group>"; };
+		677FD75F1B7D71160042E632 /* HCTabBarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCTabBarKit.framework; sourceTree = "<group>"; };
+		677FD77A1B7D73600042E632 /* WBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBarController.h; sourceTree = "<group>"; };
+		677FD7891B7D73D00042E632 /* WBTabBarControlle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarControlle.m; sourceTree = "<group>"; };
+		677FD78B1B7D75460042E632 /* UIColor+HCTabBarKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HCTabBarKit.h"; sourceTree = "<group>"; };
+		677FD78C1B7D75460042E632 /* UIColor+HCTabBarKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HCTabBarKit.m"; sourceTree = "<group>"; };
+		677FD78D1B7D75460042E632 /* UIImage+HCTabBarKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HCTabBarKit.h"; sourceTree = "<group>"; };
+		677FD78E1B7D75460042E632 /* UIImage+HCTabBarKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HCTabBarKit.m"; sourceTree = "<group>"; };
+		677FD78F1B7D75460042E632 /* UIView+HCTabBarKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HCTabBarKit.h"; sourceTree = "<group>"; };
+		677FD7901B7D75460042E632 /* UIView+HCTabBarKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HCTabBarKit.m"; sourceTree = "<group>"; };
+		677FD79C1B7D79A90042E632 /* WBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoginViewController.h; sourceTree = "<group>"; };
+		677FD79D1B7D79A90042E632 /* WBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLoginViewController.m; sourceTree = "<group>"; };
+		677FD79E1B7D79A90042E632 /* WBLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoginViewController.xib; sourceTree = "<group>"; };
+		677FD7A11B7D7A180042E632 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		677FD7A21B7D7A180042E632 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671053021B7CEAE700B09F5A /* HCTabBarKit.framework in Frameworks */,
+				677FD7601B7D71160042E632 /* HCTabBarKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,13 +102,9 @@
 		671052D91B7CEA5F00B09F5A /* HCTabBarKit-PureCode-WeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				677FD75F1B7D71160042E632 /* HCTabBarKit.framework */,
 				671053031B7CEAF300B09F5A /* HCTabBarKit.bundle */,
-				671053011B7CEAE700B09F5A /* HCTabBarKit.framework */,
-				671052DE1B7CEA5F00B09F5A /* AppDelegate.h */,
-				671052DF1B7CEA5F00B09F5A /* AppDelegate.m */,
-				671052E11B7CEA5F00B09F5A /* ViewController.h */,
-				671052E21B7CEA6000B09F5A /* ViewController.m */,
-				671052E41B7CEA6000B09F5A /* Main.storyboard */,
+				677FD7611B7D73600042E632 /* Classes */,
 				671052E71B7CEA6100B09F5A /* Images.xcassets */,
 				671052E91B7CEA6100B09F5A /* LaunchScreen.xib */,
 				671052DA1B7CEA5F00B09F5A /* Supporting Files */,
@@ -126,6 +137,340 @@
 				671052F51B7CEA6400B09F5A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		677FD7611B7D73600042E632 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7621B7D73600042E632 /* WeiBo */,
+				677FD7851B7D73600042E632 /* Categories */,
+				677FD7861B7D73600042E632 /* Managers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		677FD7621B7D73600042E632 /* WeiBo */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7841B7D73600042E632 /* App */,
+				677FD7771B7D73600042E632 /* Common */,
+				677FD7631B7D73600042E632 /* Home */,
+				677FD7681B7D73600042E632 /* Message */,
+				677FD76D1B7D73600042E632 /* Discover */,
+				677FD7721B7D73600042E632 /* Profile */,
+				677FD77F1B7D73600042E632 /* Plus(+) */,
+				677FD7971B7D79750042E632 /* Login */,
+			);
+			path = WeiBo;
+			sourceTree = "<group>";
+		};
+		677FD7631B7D73600042E632 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7641B7D73600042E632 /* Controllers */,
+				677FD7651B7D73600042E632 /* Models */,
+				677FD7661B7D73600042E632 /* ViewModels */,
+				677FD7671B7D73600042E632 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		677FD7641B7D73600042E632 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		677FD7651B7D73600042E632 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		677FD7661B7D73600042E632 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		677FD7671B7D73600042E632 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		677FD7681B7D73600042E632 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7691B7D73600042E632 /* Controllers */,
+				677FD76A1B7D73600042E632 /* Models */,
+				677FD76B1B7D73600042E632 /* ViewModels */,
+				677FD76C1B7D73600042E632 /* Views */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		677FD7691B7D73600042E632 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		677FD76A1B7D73600042E632 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		677FD76B1B7D73600042E632 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		677FD76C1B7D73600042E632 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		677FD76D1B7D73600042E632 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				677FD76E1B7D73600042E632 /* Controllers */,
+				677FD76F1B7D73600042E632 /* Models */,
+				677FD7701B7D73600042E632 /* ViewModels */,
+				677FD7711B7D73600042E632 /* Views */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		677FD76E1B7D73600042E632 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		677FD76F1B7D73600042E632 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		677FD7701B7D73600042E632 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		677FD7711B7D73600042E632 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		677FD7721B7D73600042E632 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7731B7D73600042E632 /* Controllers */,
+				677FD7741B7D73600042E632 /* Models */,
+				677FD7751B7D73600042E632 /* ViewModels */,
+				677FD7761B7D73600042E632 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		677FD7731B7D73600042E632 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		677FD7741B7D73600042E632 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		677FD7751B7D73600042E632 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		677FD7761B7D73600042E632 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		677FD7771B7D73600042E632 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7781B7D73600042E632 /* Controllers */,
+				677FD77C1B7D73600042E632 /* Models */,
+				677FD77D1B7D73600042E632 /* ViewModels */,
+				677FD77E1B7D73600042E632 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		677FD7781B7D73600042E632 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				677FD77A1B7D73600042E632 /* WBTabBarController.h */,
+				677FD7891B7D73D00042E632 /* WBTabBarControlle.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		677FD77C1B7D73600042E632 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		677FD77D1B7D73600042E632 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		677FD77E1B7D73600042E632 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		677FD77F1B7D73600042E632 /* Plus(+) */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7801B7D73600042E632 /* Controllers */,
+				677FD7811B7D73600042E632 /* Models */,
+				677FD7821B7D73600042E632 /* ViewModels */,
+				677FD7831B7D73600042E632 /* Views */,
+			);
+			path = "Plus(+)";
+			sourceTree = "<group>";
+		};
+		677FD7801B7D73600042E632 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		677FD7811B7D73600042E632 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		677FD7821B7D73600042E632 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		677FD7831B7D73600042E632 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		677FD7841B7D73600042E632 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				671052DE1B7CEA5F00B09F5A /* WBAppDelegate.h */,
+				671052DF1B7CEA5F00B09F5A /* WBAppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		677FD7851B7D73600042E632 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				677FD78B1B7D75460042E632 /* UIColor+HCTabBarKit.h */,
+				677FD78C1B7D75460042E632 /* UIColor+HCTabBarKit.m */,
+				677FD78D1B7D75460042E632 /* UIImage+HCTabBarKit.h */,
+				677FD78E1B7D75460042E632 /* UIImage+HCTabBarKit.m */,
+				677FD78F1B7D75460042E632 /* UIView+HCTabBarKit.h */,
+				677FD7901B7D75460042E632 /* UIView+HCTabBarKit.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		677FD7861B7D73600042E632 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		677FD7971B7D79750042E632 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7981B7D79750042E632 /* Controllers */,
+				677FD7991B7D79750042E632 /* Models */,
+				677FD79A1B7D79750042E632 /* ViewModels */,
+				677FD79B1B7D79750042E632 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		677FD7981B7D79750042E632 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				677FD79C1B7D79A90042E632 /* WBLoginViewController.h */,
+				677FD79D1B7D79A90042E632 /* WBLoginViewController.m */,
+				677FD79E1B7D79A90042E632 /* WBLoginViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		677FD7991B7D79750042E632 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7A11B7D7A180042E632 /* User.h */,
+				677FD7A21B7D7A180042E632 /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		677FD79A1B7D79750042E632 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		677FD79B1B7D79750042E632 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,10 +553,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671052E61B7CEA6000B09F5A /* Main.storyboard in Resources */,
 				671053041B7CEAF300B09F5A /* HCTabBarKit.bundle in Resources */,
 				671052EB1B7CEA6100B09F5A /* LaunchScreen.xib in Resources */,
 				671052E81B7CEA6100B09F5A /* Images.xcassets in Resources */,
+				677FD7A01B7D79A90042E632 /* WBLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,9 +574,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671052E31B7CEA6000B09F5A /* ViewController.m in Sources */,
-				671052E01B7CEA5F00B09F5A /* AppDelegate.m in Sources */,
+				677FD7A31B7D7A180042E632 /* User.m in Sources */,
+				677FD7931B7D75460042E632 /* UIView+HCTabBarKit.m in Sources */,
+				671052E01B7CEA5F00B09F5A /* WBAppDelegate.m in Sources */,
+				677FD78A1B7D73D00042E632 /* WBTabBarControlle.m in Sources */,
 				671052DD1B7CEA5F00B09F5A /* main.m in Sources */,
+				677FD7911B7D75460042E632 /* UIColor+HCTabBarKit.m in Sources */,
+				677FD79F1B7D79A90042E632 /* WBLoginViewController.m in Sources */,
+				677FD7921B7D75460042E632 /* UIImage+HCTabBarKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +604,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		671052E41B7CEA6000B09F5A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				671052E51B7CEA6000B09F5A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		671052E91B7CEA6100B09F5A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -309,7 +651,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -347,7 +689,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,6 +705,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HCTabBarKit-PureCode-WeiBo",
 				);
+				GCC_PREFIX_HEADER = "HCTabBarKit-PureCode-WeiBo/HCTabBarKit-PureCode-WeiBo-PrefixHeader.pch";
 				INFOPLIST_FILE = "HCTabBarKit-PureCode-WeiBo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -377,6 +720,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HCTabBarKit-PureCode-WeiBo",
 				);
+				GCC_PREFIX_HEADER = "HCTabBarKit-PureCode-WeiBo/HCTabBarKit-PureCode-WeiBo-PrefixHeader.pch";
 				INFOPLIST_FILE = "HCTabBarKit-PureCode-WeiBo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +780,7 @@
 				671052FC1B7CEA6400B09F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		671052FD1B7CEA6400B09F5A /* Build configuration list for PBXNativeTarget "HCTabBarKit-PureCode-WeiBoTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +789,7 @@
 				671052FF1B7CEA6400B09F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

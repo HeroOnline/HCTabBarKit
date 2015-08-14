@@ -35,14 +35,14 @@
 		6773FDF61B7B9CCB0041A8B1 /* QZAtDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FDC21B7B9CCA0041A8B1 /* QZAtDetailViewController.m */; };
 		6773FDF71B7B9CCB0041A8B1 /* QZAt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6773FDC41B7B9CCA0041A8B1 /* QZAt.storyboard */; };
 		6773FDF81B7B9CCB0041A8B1 /* QZoneMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6773FDCA1B7B9CCA0041A8B1 /* QZoneMain.storyboard */; };
-		6773FDF91B7B9CCB0041A8B1 /* QZBaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FDCE1B7B9CCA0041A8B1 /* QZBaseDetailViewController.m */; };
-		6773FDFA1B7B9CCB0041A8B1 /* QZBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FDCF1B7B9CCA0041A8B1 /* QZBaseTableViewController.m */; };
-		6773FDFB1B7B9CCB0041A8B1 /* QZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FDD21B7B9CCA0041A8B1 /* QZTabBarController.m */; };
 		6773FDFC1B7B9CCB0041A8B1 /* BullB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FDD51B7B9CCA0041A8B1 /* BullB.m */; };
 		6773FDFD1B7B9CCB0041A8B1 /* QZLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6773FDDA1B7B9CCA0041A8B1 /* QZLogin.storyboard */; };
 		6773FDFE1B7B9CCB0041A8B1 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FDDE1B7B9CCA0041A8B1 /* User.m */; };
 		6773FDFF1B7B9CCB0041A8B1 /* QZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FDE01B7B9CCA0041A8B1 /* QZLoginViewController.m */; };
 		6773FE031B7B9E970041A8B1 /* QZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FE021B7B9E970041A8B1 /* QZAppDelegate.m */; };
+		677FD75C1B7D6F250042E632 /* QZBaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7571B7D6F250042E632 /* QZBaseDetailViewController.m */; };
+		677FD75D1B7D6F250042E632 /* QZBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7581B7D6F250042E632 /* QZBaseTableViewController.m */; };
+		677FD75E1B7D6F250042E632 /* QZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD75B1B7D6F250042E632 /* QZTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,12 +103,6 @@
 		6773FDC21B7B9CCA0041A8B1 /* QZAtDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAtDetailViewController.m; sourceTree = "<group>"; };
 		6773FDC41B7B9CCA0041A8B1 /* QZAt.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QZAt.storyboard; sourceTree = "<group>"; };
 		6773FDCA1B7B9CCA0041A8B1 /* QZoneMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QZoneMain.storyboard; sourceTree = "<group>"; };
-		6773FDCD1B7B9CCA0041A8B1 /* QZBaseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBaseDetailViewController.h; sourceTree = "<group>"; };
-		6773FDCE1B7B9CCA0041A8B1 /* QZBaseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZBaseDetailViewController.m; sourceTree = "<group>"; };
-		6773FDCF1B7B9CCA0041A8B1 /* QZBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZBaseTableViewController.m; sourceTree = "<group>"; };
-		6773FDD01B7B9CCA0041A8B1 /* QZBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBaseTableViewController.h; sourceTree = "<group>"; };
-		6773FDD11B7B9CCA0041A8B1 /* QZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTabBarController.h; sourceTree = "<group>"; };
-		6773FDD21B7B9CCA0041A8B1 /* QZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTabBarController.m; sourceTree = "<group>"; };
 		6773FDD41B7B9CCA0041A8B1 /* BullB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullB.h; sourceTree = "<group>"; };
 		6773FDD51B7B9CCA0041A8B1 /* BullB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullB.m; sourceTree = "<group>"; };
 		6773FDDA1B7B9CCA0041A8B1 /* QZLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QZLogin.storyboard; sourceTree = "<group>"; };
@@ -118,6 +112,12 @@
 		6773FDE11B7B9CCA0041A8B1 /* QZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZLoginViewController.h; sourceTree = "<group>"; };
 		6773FE011B7B9E970041A8B1 /* QZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAppDelegate.h; sourceTree = "<group>"; };
 		6773FE021B7B9E970041A8B1 /* QZAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAppDelegate.m; sourceTree = "<group>"; };
+		677FD7561B7D6F250042E632 /* QZBaseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBaseDetailViewController.h; sourceTree = "<group>"; };
+		677FD7571B7D6F250042E632 /* QZBaseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZBaseDetailViewController.m; sourceTree = "<group>"; };
+		677FD7581B7D6F250042E632 /* QZBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZBaseTableViewController.m; sourceTree = "<group>"; };
+		677FD7591B7D6F250042E632 /* QZBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBaseTableViewController.h; sourceTree = "<group>"; };
+		677FD75A1B7D6F250042E632 /* QZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTabBarController.h; sourceTree = "<group>"; };
+		677FD75B1B7D6F250042E632 /* QZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,7 +510,7 @@
 			isa = PBXGroup;
 			children = (
 				6773FDC91B7B9CCA0041A8B1 /* Storyboards */,
-				6773FDCB1B7B9CCA0041A8B1 /* ViewControllers */,
+				677FD7541B7D6F250042E632 /* Controllers */,
 				6773FDD31B7B9CCA0041A8B1 /* Models */,
 				6773FDD61B7B9CCA0041A8B1 /* Views */,
 				6773FDD71B7B9CCA0041A8B1 /* ViewModels */,
@@ -524,27 +524,6 @@
 				6773FDCA1B7B9CCA0041A8B1 /* QZoneMain.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		6773FDCB1B7B9CCA0041A8B1 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				6773FDCC1B7B9CCA0041A8B1 /* Base */,
-				6773FDD11B7B9CCA0041A8B1 /* QZTabBarController.h */,
-				6773FDD21B7B9CCA0041A8B1 /* QZTabBarController.m */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		6773FDCC1B7B9CCA0041A8B1 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6773FDCD1B7B9CCA0041A8B1 /* QZBaseDetailViewController.h */,
-				6773FDCE1B7B9CCA0041A8B1 /* QZBaseDetailViewController.m */,
-				6773FDCF1B7B9CCA0041A8B1 /* QZBaseTableViewController.m */,
-				6773FDD01B7B9CCA0041A8B1 /* QZBaseTableViewController.h */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		6773FDD31B7B9CCA0041A8B1 /* Models */ = {
@@ -629,6 +608,27 @@
 				6773FE021B7B9E970041A8B1 /* QZAppDelegate.m */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		677FD7541B7D6F250042E632 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7551B7D6F250042E632 /* Base */,
+				677FD75A1B7D6F250042E632 /* QZTabBarController.h */,
+				677FD75B1B7D6F250042E632 /* QZTabBarController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		677FD7551B7D6F250042E632 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				677FD7561B7D6F250042E632 /* QZBaseDetailViewController.h */,
+				677FD7571B7D6F250042E632 /* QZBaseDetailViewController.m */,
+				677FD7581B7D6F250042E632 /* QZBaseTableViewController.m */,
+				677FD7591B7D6F250042E632 /* QZBaseTableViewController.h */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -745,11 +745,12 @@
 				6773FE031B7B9E970041A8B1 /* QZAppDelegate.m in Sources */,
 				6773FDFE1B7B9CCB0041A8B1 /* User.m in Sources */,
 				6773FDE41B7B9CCB0041A8B1 /* UIView+HCTabBarKit.m in Sources */,
+				677FD75C1B7D6F250042E632 /* QZBaseDetailViewController.m in Sources */,
 				6773FDF21B7B9CCB0041A8B1 /* QZPlusView.m in Sources */,
-				6773FDFB1B7B9CCB0041A8B1 /* QZTabBarController.m in Sources */,
 				6773FBE61B7B35E00041A8B1 /* main.m in Sources */,
 				6773FDE31B7B9CCA0041A8B1 /* UIColor+HCTabBarKit.m in Sources */,
 				6773FDE51B7B9CCB0041A8B1 /* UIImage+HCTabBarKit.m in Sources */,
+				677FD75E1B7D6F250042E632 /* QZTabBarController.m in Sources */,
 				6773FDF41B7B9CCB0041A8B1 /* MGJPlusViewController.m in Sources */,
 				6773FDE81B7B9CCB0041A8B1 /* QZSpaceViewController.m in Sources */,
 				6773FDE71B7B9CCB0041A8B1 /* QZSpaceDetailViewController.m in Sources */,
@@ -758,12 +759,11 @@
 				6773FDF51B7B9CCB0041A8B1 /* QZAtViewController.m in Sources */,
 				6773FDF61B7B9CCB0041A8B1 /* QZAtDetailViewController.m in Sources */,
 				6773FDFF1B7B9CCB0041A8B1 /* QZLoginViewController.m in Sources */,
-				6773FDFA1B7B9CCB0041A8B1 /* QZBaseTableViewController.m in Sources */,
+				677FD75D1B7D6F250042E632 /* QZBaseTableViewController.m in Sources */,
 				6773FDFC1B7B9CCB0041A8B1 /* BullB.m in Sources */,
 				6773FDED1B7B9CCB0041A8B1 /* QZAuthDetailViewController.m in Sources */,
 				6773FDEB1B7B9CCB0041A8B1 /* QZMoreDetailViewController.m in Sources */,
 				6773FDEE1B7B9CCB0041A8B1 /* QZAuthViewController.m in Sources */,
-				6773FDF91B7B9CCB0041A8B1 /* QZBaseDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

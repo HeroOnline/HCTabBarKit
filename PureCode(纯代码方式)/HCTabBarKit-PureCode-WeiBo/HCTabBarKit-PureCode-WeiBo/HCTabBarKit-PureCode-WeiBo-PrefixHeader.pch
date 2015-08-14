@@ -18,6 +18,8 @@
 #import "UIImage+HCTabBarKit.h"
 #import "UIColor+HCTabBarKit.h"
 
+#import "User.h"
+
 static NSString *const QZTableViewCellIdentifier = @"QZCell";
 
 static NSString *const QZCellTitle = @"天朝以及全球最牛逼的HCTabBarKit";
