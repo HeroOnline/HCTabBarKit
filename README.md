@@ -7,7 +7,7 @@
 
 支持淘宝，天猫，微信，QQ空间，QQ，微博，京东，楚楚街，美丽说，美团，支付宝，唯品团，1号店，微视等等 <br/><br/>
 
-作者：HeroCao <br/>
+作者：<a href='https://github.com/HeroOnline'>HeroCao</a> <br/>
 邮箱：heroonlinecao@gmail.com、heroonlinecao@126.com  <br/>
 QQ群：482682853，验证信息：HCTabBarKit <br/><br/>
 
