@@ -13,14 +13,14 @@
 		671052EB1B7CEA6100B09F5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 671052E91B7CEA6100B09F5A /* LaunchScreen.xib */; };
 		671052F71B7CEA6400B09F5A /* HCTabBarKit_PureCode_WeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671052F61B7CEA6400B09F5A /* HCTabBarKit_PureCode_WeiBoTests.m */; };
 		671053041B7CEAF300B09F5A /* HCTabBarKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 671053031B7CEAF300B09F5A /* HCTabBarKit.bundle */; };
-		677FD7601B7D71160042E632 /* HCTabBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677FD75F1B7D71160042E632 /* HCTabBarKit.framework */; };
-		677FD78A1B7D73D00042E632 /* WBTabBarControlle.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7891B7D73D00042E632 /* WBTabBarControlle.m */; };
+		677FD78A1B7D73D00042E632 /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7891B7D73D00042E632 /* WBTabBarController.m */; };
 		677FD7911B7D75460042E632 /* UIColor+HCTabBarKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD78C1B7D75460042E632 /* UIColor+HCTabBarKit.m */; };
 		677FD7921B7D75460042E632 /* UIImage+HCTabBarKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD78E1B7D75460042E632 /* UIImage+HCTabBarKit.m */; };
 		677FD7931B7D75460042E632 /* UIView+HCTabBarKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7901B7D75460042E632 /* UIView+HCTabBarKit.m */; };
 		677FD79F1B7D79A90042E632 /* WBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD79D1B7D79A90042E632 /* WBLoginViewController.m */; };
 		677FD7A01B7D79A90042E632 /* WBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677FD79E1B7D79A90042E632 /* WBLoginViewController.xib */; };
 		677FD7A31B7D7A180042E632 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7A21B7D7A180042E632 /* User.m */; };
+		677FD7A51B7D83FA0042E632 /* HCTabBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677FD7A41B7D83FA0042E632 /* HCTabBarKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +46,8 @@
 		671052F61B7CEA6400B09F5A /* HCTabBarKit_PureCode_WeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCTabBarKit_PureCode_WeiBoTests.m; sourceTree = "<group>"; };
 		671053001B7CEA9400B09F5A /* HCTabBarKit-PureCode-WeiBo-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HCTabBarKit-PureCode-WeiBo-PrefixHeader.pch"; sourceTree = "<group>"; };
 		671053031B7CEAF300B09F5A /* HCTabBarKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HCTabBarKit.bundle; sourceTree = "<group>"; };
-		677FD75F1B7D71160042E632 /* HCTabBarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCTabBarKit.framework; sourceTree = "<group>"; };
 		677FD77A1B7D73600042E632 /* WBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBarController.h; sourceTree = "<group>"; };
-		677FD7891B7D73D00042E632 /* WBTabBarControlle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarControlle.m; sourceTree = "<group>"; };
+		677FD7891B7D73D00042E632 /* WBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarController.m; sourceTree = "<group>"; };
 		677FD78B1B7D75460042E632 /* UIColor+HCTabBarKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HCTabBarKit.h"; sourceTree = "<group>"; };
 		677FD78C1B7D75460042E632 /* UIColor+HCTabBarKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HCTabBarKit.m"; sourceTree = "<group>"; };
 		677FD78D1B7D75460042E632 /* UIImage+HCTabBarKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HCTabBarKit.h"; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		677FD79E1B7D79A90042E632 /* WBLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoginViewController.xib; sourceTree = "<group>"; };
 		677FD7A11B7D7A180042E632 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		677FD7A21B7D7A180042E632 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		677FD7A41B7D83FA0042E632 /* HCTabBarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCTabBarKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				677FD7601B7D71160042E632 /* HCTabBarKit.framework in Frameworks */,
+				677FD7A51B7D83FA0042E632 /* HCTabBarKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 		671052D91B7CEA5F00B09F5A /* HCTabBarKit-PureCode-WeiBo */ = {
 			isa = PBXGroup;
 			children = (
-				677FD75F1B7D71160042E632 /* HCTabBarKit.framework */,
+				677FD7A41B7D83FA0042E632 /* HCTabBarKit.framework */,
 				671053031B7CEAF300B09F5A /* HCTabBarKit.bundle */,
 				677FD7611B7D73600042E632 /* Classes */,
 				671052E71B7CEA6100B09F5A /* Images.xcassets */,
@@ -335,7 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				677FD77A1B7D73600042E632 /* WBTabBarController.h */,
-				677FD7891B7D73D00042E632 /* WBTabBarControlle.m */,
+				677FD7891B7D73D00042E632 /* WBTabBarController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -577,7 +577,7 @@
 				677FD7A31B7D7A180042E632 /* User.m in Sources */,
 				677FD7931B7D75460042E632 /* UIView+HCTabBarKit.m in Sources */,
 				671052E01B7CEA5F00B09F5A /* WBAppDelegate.m in Sources */,
-				677FD78A1B7D73D00042E632 /* WBTabBarControlle.m in Sources */,
+				677FD78A1B7D73D00042E632 /* WBTabBarController.m in Sources */,
 				671052DD1B7CEA5F00B09F5A /* main.m in Sources */,
 				677FD7911B7D75460042E632 /* UIColor+HCTabBarKit.m in Sources */,
 				677FD79F1B7D79A90042E632 /* WBLoginViewController.m in Sources */,
@@ -706,6 +706,11 @@
 					"$(PROJECT_DIR)/HCTabBarKit-PureCode-WeiBo",
 				);
 				GCC_PREFIX_HEADER = "HCTabBarKit-PureCode-WeiBo/HCTabBarKit-PureCode-WeiBo-PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"HCDEBUG=1",
+				);
 				INFOPLIST_FILE = "HCTabBarKit-PureCode-WeiBo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

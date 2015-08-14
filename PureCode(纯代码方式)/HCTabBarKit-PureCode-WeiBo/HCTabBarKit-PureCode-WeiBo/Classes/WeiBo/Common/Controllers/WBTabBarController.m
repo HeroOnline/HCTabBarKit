@@ -36,11 +36,12 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    HCLog(@"viewDidLoad # ...");
+
+    [self hc_initialize];
 }
 
 - (void)hc_initialize {
-    
-    [super hc_initialize];
     
     HCLog(@"WBTabBarController # hc_initialize # ...");
     

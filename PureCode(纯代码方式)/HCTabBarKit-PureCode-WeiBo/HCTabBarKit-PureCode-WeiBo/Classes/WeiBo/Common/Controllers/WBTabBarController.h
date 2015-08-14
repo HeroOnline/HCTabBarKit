@@ -8,16 +8,6 @@
 
 #import <HCTabBarKit/HCTabBarController.h>
 
-@class HCTabBarButtonItem;
-
 @interface WBTabBarController : HCTabBarController
-
-@property (nonatomic, weak) HCTabBarButtonItem *tabBarButtonItem01;
-@property (nonatomic, weak) HCTabBarButtonItem *tabBarButtonItem02;
-@property (nonatomic, weak) HCTabBarButtonItem *tabBarButtonItem03;
-@property (nonatomic, weak) HCTabBarButtonItem *tabBarButtonItem04;
-@property (nonatomic, weak) HCTabBarButtonItem *tabBarButtonItem05;
-
-
 
 @end

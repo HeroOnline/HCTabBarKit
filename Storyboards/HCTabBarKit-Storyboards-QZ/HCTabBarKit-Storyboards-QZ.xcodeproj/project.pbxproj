@@ -287,9 +287,9 @@
 			isa = PBXGroup;
 			children = (
 				6773FD941B7B9CCA0041A8B1 /* QZSpaceViewController.h */,
-				6773FD951B7B9CCA0041A8B1 /* QZSpaceDetailViewController.m */,
-				6773FD961B7B9CCA0041A8B1 /* QZSpaceDetailViewController.h */,
 				6773FD971B7B9CCA0041A8B1 /* QZSpaceViewController.m */,
+				6773FD961B7B9CCA0041A8B1 /* QZSpaceDetailViewController.h */,
+				6773FD951B7B9CCA0041A8B1 /* QZSpaceDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,11 +297,11 @@
 		6773FD981B7B9CCA0041A8B1 /* More */ = {
 			isa = PBXGroup;
 			children = (
-				6773FD991B7B9CCA0041A8B1 /* Models */,
 				6773FD9A1B7B9CCA0041A8B1 /* Storyboards */,
+				6773FD9E1B7B9CCA0041A8B1 /* Controllers */,
+				6773FD991B7B9CCA0041A8B1 /* Models */,
 				6773FD9C1B7B9CCA0041A8B1 /* ViewModels */,
 				6773FD9D1B7B9CCA0041A8B1 /* Views */,
-				6773FD9E1B7B9CCA0041A8B1 /* Controllers */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -349,11 +349,11 @@
 		6773FDA31B7B9CCA0041A8B1 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				6773FDA41B7B9CCA0041A8B1 /* Models */,
 				6773FDA51B7B9CCA0041A8B1 /* Storyboards */,
+				6773FDA91B7B9CCA0041A8B1 /* Controllers */,
+				6773FDA41B7B9CCA0041A8B1 /* Models */,
 				6773FDA71B7B9CCA0041A8B1 /* ViewModels */,
 				6773FDA81B7B9CCA0041A8B1 /* Views */,
-				6773FDA91B7B9CCA0041A8B1 /* Controllers */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -457,8 +457,8 @@
 		6773FDBD1B7B9CCA0041A8B1 /* At */ = {
 			isa = PBXGroup;
 			children = (
-				6773FDBE1B7B9CCA0041A8B1 /* Controllers */,
 				6773FDC31B7B9CCA0041A8B1 /* Storyboards */,
+				6773FDBE1B7B9CCA0041A8B1 /* Controllers */,
 				6773FDC51B7B9CCA0041A8B1 /* Models */,
 				6773FDC61B7B9CCA0041A8B1 /* Views */,
 				6773FDC71B7B9CCA0041A8B1 /* ViewModels */,

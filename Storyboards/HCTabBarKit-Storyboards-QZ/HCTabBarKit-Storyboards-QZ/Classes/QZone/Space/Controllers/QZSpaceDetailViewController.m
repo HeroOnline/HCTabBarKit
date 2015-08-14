@@ -10,6 +10,7 @@
 #import "BullB.h"
 
 @interface QZSpaceDetailViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
 - (IBAction)didClickBack:(UIBarButtonItem *)sender;
 
@@ -31,12 +32,6 @@
 - (IBAction)didClickBack:(UIBarButtonItem *)sender {
     
     [self.navigationController popViewControllerAnimated:YES];
-    
-    // 显示TabBar
-    
-//    HCTabBarController *tabBarController = (HCTabBarController *)self.tabBarController;
-    
-//    [tabBarController hideTabBar:NO];
     
 }
 @end

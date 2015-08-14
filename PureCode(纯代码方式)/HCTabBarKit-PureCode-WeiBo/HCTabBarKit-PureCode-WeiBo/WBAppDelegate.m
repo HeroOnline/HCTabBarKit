@@ -18,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    HCLog(@"didFinishLaunchingWithOptions: # ...");
+    
     // 纯代码方式实现 HCTabBarController
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
