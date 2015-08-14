@@ -12,8 +12,9 @@
 
 @property (nonatomic, strong) User *user;
 
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
 - (IBAction)didClickCancel:(UIBarButtonItem *)sender;
-- (IBAction)didClickLogin:(UIButton *)sender;
+- (IBAction)didClickLogin:(UIBarButtonItem *)sender;
 
 @end
 
@@ -24,6 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSRange range = [QZCellDetail rangeOfString:@"HCTabBarKit"];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:QZCellDetail];
+    [attributedString addAttributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:28.0f], NSForegroundColorAttributeName: [UIColor colorForRandom]} range:range];
+    self.textLabel.attributedText = attributedString;
 }
 
 #pragma mark - Actions
@@ -33,11 +38,9 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)didClickLogin:(UIButton *)sender {
+- (IBAction)didClickLogin:(UIBarButtonItem *)sender {
     
-    NSLog(@"_user=%@, self.user=%@", _user, self.user);
-    
-    self.user.loginState = YES;
+    self.user.loginState = YES;  // 标记登录状态
     
     [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:self.user] forKey:@"User"];
     
@@ -46,10 +49,6 @@
     [self dismissViewControllerAnimated:YES completion:^{
         
         // 跳转到目标Tab
-        
-        HCLog(@"weakSelf.tabBarController=%@, weakSelf.tabIndex=%ld, weakSelf.hc_tabBarController=%@", weakSelf.tabBarController, weakSelf.tabIndex, weakSelf.hc_tabBarController);
-        
-        
         [weakSelf.hc_tabBarController.hc_tabBar switchTabWithIndex:weakSelf.tabIndex];
         
     }];

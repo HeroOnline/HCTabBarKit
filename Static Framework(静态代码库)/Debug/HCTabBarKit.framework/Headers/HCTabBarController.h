@@ -18,6 +18,11 @@
 
 @property (nonatomic, weak) id<HCTabBarControllerDelegate> tabBarDelegate;
 
+
+- (void)hc_addChildViewController:(UIViewController *)childController;
+
+- (void)hc_addChildViewController:(UIViewController *)childController title:(NSString *)title;
+
 /**
  *  初始化，提示：子类必须重写这个方法
  *

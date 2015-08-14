@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    HCLog(@"didFinishLaunchingWithOptions: # ...");
+//    HCLog(@"didFinishLaunchingWithOptions: # ...");
     
     // 纯代码方式实现 HCTabBarController
     

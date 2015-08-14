@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		671052671B7C232500B09F5A /* HCTabBarKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 671052661B7C232500B09F5A /* HCTabBarKit.bundle */; };
-		671052CD1B7CE3B500B09F5A /* HCTabBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671052CC1B7CE3B500B09F5A /* HCTabBarKit.framework */; };
 		6773FBE61B7B35E00041A8B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FBE51B7B35E00041A8B1 /* main.m */; };
 		6773FBF11B7B35E00041A8B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6773FBF01B7B35E00041A8B1 /* Images.xcassets */; };
 		6773FBF41B7B35E00041A8B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6773FBF21B7B35E00041A8B1 /* LaunchScreen.xib */; };
@@ -43,6 +42,7 @@
 		677FD75C1B7D6F250042E632 /* QZBaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7571B7D6F250042E632 /* QZBaseDetailViewController.m */; };
 		677FD75D1B7D6F250042E632 /* QZBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD7581B7D6F250042E632 /* QZBaseTableViewController.m */; };
 		677FD75E1B7D6F250042E632 /* QZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677FD75B1B7D6F250042E632 /* QZTabBarController.m */; };
+		677FD8A01B7DF83C0042E632 /* HCTabBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677FD89F1B7DF83C0042E632 /* HCTabBarKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,6 @@
 
 /* Begin PBXFileReference section */
 		671052661B7C232500B09F5A /* HCTabBarKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HCTabBarKit.bundle; sourceTree = "<group>"; };
-		671052CC1B7CE3B500B09F5A /* HCTabBarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCTabBarKit.framework; sourceTree = "<group>"; };
 		6773FBE01B7B35DF0041A8B1 /* HCTabBarKit-Storyboards-QZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCTabBarKit-Storyboards-QZ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6773FBE41B7B35E00041A8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6773FBE51B7B35E00041A8B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +117,7 @@
 		677FD7591B7D6F250042E632 /* QZBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBaseTableViewController.h; sourceTree = "<group>"; };
 		677FD75A1B7D6F250042E632 /* QZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTabBarController.h; sourceTree = "<group>"; };
 		677FD75B1B7D6F250042E632 /* QZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTabBarController.m; sourceTree = "<group>"; };
+		677FD89F1B7DF83C0042E632 /* HCTabBarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HCTabBarKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671052CD1B7CE3B500B09F5A /* HCTabBarKit.framework in Frameworks */,
+				677FD8A01B7DF83C0042E632 /* HCTabBarKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +160,7 @@
 		6773FBE21B7B35DF0041A8B1 /* HCTabBarKit-Storyboards-QZ */ = {
 			isa = PBXGroup;
 			children = (
-				671052CC1B7CE3B500B09F5A /* HCTabBarKit.framework */,
+				677FD89F1B7DF83C0042E632 /* HCTabBarKit.framework */,
 				671052661B7C232500B09F5A /* HCTabBarKit.bundle */,
 				6773FD831B7B9CCA0041A8B1 /* Classes */,
 				6773FBF01B7B35E00041A8B1 /* Images.xcassets */,
@@ -681,7 +681,6 @@
 				TargetAttributes = {
 					6773FBDF1B7B35DF0041A8B1 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = UVGYWCFCGC;
 					};
 					6773FBF81B7B35E00041A8B1 = {
 						CreatedOnToolsVersion = 6.4;

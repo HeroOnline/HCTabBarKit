@@ -19,6 +19,6 @@
  */
 + (instancetype)colorForRandom;
 
-+ (instancetype)colorWithHexString:(NSString *)hexString;
+//+ (instancetype)colorWithHexString:(NSString *)hexString;
 
 @end

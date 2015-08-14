@@ -7,18 +7,14 @@
 //
 
 #import "WBTabBarController.h"
-//#import "WBAddViewController.h"
-//#import "WBNavigationController.h"
-//#import "WBSendContentViewController.h"
-
-//#import "WBTabBarViewModel.h"
-
-//#import "WBDiscoverViewController.h"
-
+#import "WBHomeViewController.h"
+#import "WBDiscoverViewController.h"
+#import "WBProfileViewController.h"
+#import "WBMessageViewController.h"
 #import "WBLoginViewController.h"
+#import "WBPlusViewController.h"
 
-
-static CGFloat const WBTabBarTitleFontSize = 10.0f;
+//static CGFloat const WBTabBarTitleFontSize = 10.0f;
 
 static NSString *const WBTabBarTitleNormalColorString = @"#FF888888";
 
@@ -27,7 +23,8 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
 
 @interface WBTabBarController ()
 
-//@property (nonatomic, weak) QZPlusView *plusView;
+/// 告诉HCTabBarKit 框架不使用 Storyboard，注意必须是nonatomic、BOOL类型，readonly
+@property (nonatomic, readonly) BOOL hc_doNotWantToUseTheStoryboard;
 
 @end
 
@@ -38,12 +35,36 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
 
     HCLog(@"viewDidLoad # ...");
 
-    [self hc_initialize];
 }
 
 - (void)hc_initialize {
     
     HCLog(@"WBTabBarController # hc_initialize # ...");
+    
+    //////  纯代码方式实现 TabBar ，必须首先添加控制器 Begin  ////////////////////
+    
+    WBHomeViewController *homeVC = [[WBHomeViewController alloc] init];
+    
+    [self hc_addChildViewController:homeVC title:@"Home"];
+    
+    WBMessageViewController *messageVC = [[WBMessageViewController alloc] init];
+    
+    [self hc_addChildViewController:messageVC title:@"Message"];
+    
+    // 目的是占位
+    UIViewController *plusVC = [[UIViewController alloc] init];
+    
+    [self hc_addChildViewController:plusVC];
+    
+    WBDiscoverViewController *discoverVC = [[WBDiscoverViewController alloc] init];
+    
+    [self hc_addChildViewController:discoverVC title:@"Discover"];
+    
+    WBProfileViewController *profileVC = [[WBProfileViewController alloc] init];
+     
+    [self hc_addChildViewController:profileVC title:@"Me"];
+    
+    //////  纯代码方式实现 TabBar ，必须首先添加控制器 End  ////////////////////
     
     NSMutableArray *tabBarButtonItems = [NSMutableArray array];
     
@@ -59,7 +80,7 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     // Title Message
     //    dict1[HCTabBarTitleFontAttributeName] = [UIFont systemFontOfSize:QZoneTabBarTitleDefaultFontSize];   // 需要全局设置一次
     
-    dict1[HCTabBarTitleNormalAttributeName] = @"动态";
+    dict1[HCTabBarTitleNormalAttributeName] = @"Home";
     
     //    dict2[HCTabBarTitleNormalForegroundColorAttributeName] = [UIColor colorWithHexString:WBTabBarTitleNormalColorString];
     
@@ -71,18 +92,18 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     HCTabBarButtonItem *tabBarButtonItem01 = [HCTabBarButtonItem itemWithAttributes:dict1];
     
     
-    // @
+    // Message
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionaryWithCapacity:2];
     
-    dict2[HCTabBarButtonNormalImageAttributeName] = [UIImage imageNamed:@"tabbar_icon_at"];
+    dict2[HCTabBarButtonNormalImageAttributeName] = [UIImage imageNamed:@"tabbar_message_center"];
     
     
-    dict2[HCTabBarButtonSelectedImageAttributeName] = [UIImage imageNamed:@"tabbar_icon_at_click"];
+    dict2[HCTabBarButtonSelectedImageAttributeName] = [UIImage imageNamed:@"tabbar_message_center_selected"];
     
     // Title Message
     //    dict2[HCTabBarTitleFontAttributeName] = [UIFont systemFontOfSize:QZoneTabBarTitleDefaultFontSize];   // 需要全局设置一次
     
-    dict2[HCTabBarTitleNormalAttributeName] = @"与我相关";
+    dict2[HCTabBarTitleNormalAttributeName] = @"Message";
     
     //    dict2[HCTabBarTitleNormalForegroundColorAttributeName] = [UIColor colorWithHexString:WBTabBarTitleNormalColorString];
     
@@ -101,15 +122,16 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     // in App 中间Camera
     //     dict3[HCTabBarButtonNormalImageAttributeName] = [UIImage imageNamed:@"paizhao"];
     
-    dict3[HCTabBarButtonNormalImageAttributeName] = [UIImage imageNamed:@"tabbar_btn"];
+    dict3[HCTabBarButtonNormalImageAttributeName] = [UIImage imageNamed:@"tabbar_compose_icon_add"];
     
-    //    dict3[HCTabBarButtonNormalBackgroundImageAttributeName] = [UIImage imageNamed:@"NewYearHonbao_Button"];
+        dict3[HCTabBarButtonNormalBackgroundImageAttributeName] = [UIImage imageNamed:@"tabbar_compose_button"];
+    
+    dict3[HCTabBarButtonHighlightedBackgroundImageAttributeName] = [UIImage imageNamed:@"tabbar_compose_button_highlighted"];
     
     //    dict3[HCTabBarButtonNormalBackgroundImageAttributeName] = [UIImage imageNamed:@"OpenDownPrgFront"];
     
     
-    
-    //    dict3[HCTabBarButtonSelectedImageAttributeName] = [UIImage imageNamed:@"tabbar_icon_at_click"];
+        dict3[HCTabBarButtonSelectedImageAttributeName] = [UIImage imageNamed:@"tabbar_compose_icon_add_highlighted"];
     
     // Title Message
     //    dict3[HCTabBarTitleFontAttributeName] = [UIFont systemFontOfSize:QZoneTabBarTitleDefaultFontSize];   // 需要全局设置一次
@@ -128,14 +150,14 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     
     tabBarButtonItem03.specialEffect = YES;
     
-    //    tabBarButtonItem03.specialEffectType = HCTabBarSpecialEffectTypeSquare;
+//        tabBarButtonItem03.specialEffectType = HCTabBarSpecialEffectTypeSquare;
     //    tabBarButtonItem03
     
     //     tabBarButtonItem03.specialEffectType = HCTabBarSpecialEffectTypeBulge;
     
     //    tabBarButtonItem03.specialEffectTypeBulgeFillValue = 8.0f;  // 8.0
     
-    tabBarButtonItem03.specialEffectType = HCTabBarSpecialEffectTypeBulgeSquare;
+//    tabBarButtonItem03.specialEffectType = HCTabBarSpecialEffectTypeBulgeSquare;
     
     //    tabBarButtonItem03.specialEffectTypeBulgeFillValue = 6.0f;  // 22.0f
     
@@ -146,18 +168,18 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     
     tabBarButtonItem03.adjustsImageWhenHighlighted = YES;
     
-    // 我的空间
+    // Discover
     NSMutableDictionary *dict4 = [NSMutableDictionary dictionaryWithCapacity:2];
     
-    dict4[HCTabBarButtonNormalImageAttributeName] = [UIImage imageNamed:@"tabbar_icon_space"];
+    dict4[HCTabBarButtonNormalImageAttributeName] = [UIImage imageNamed:@"tabbar_discover"];
     
     
-    dict4[HCTabBarButtonSelectedImageAttributeName] = [UIImage imageNamed:@"tabbar_icon_space_click"];
+    dict4[HCTabBarButtonSelectedImageAttributeName] = [UIImage imageNamed:@"tabbar_discover_selected"];
     
     // Title Message
     //    dict4[HCTabBarTitleFontAttributeName] = [UIFont systemFontOfSize:QZoneTabBarTitleDefaultFontSize];   // 需要全局设置一次
     
-    dict4[HCTabBarTitleNormalAttributeName] = @"我的空间";
+    dict4[HCTabBarTitleNormalAttributeName] = @"Discover";
     
     //    dict2[HCTabBarTitleNormalForegroundColorAttributeName] = [UIColor colorWithHexString:WBTabBarTitleNormalColorString];
     
@@ -168,21 +190,21 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     
     HCTabBarButtonItem *tabBarButtonItem04 = [HCTabBarButtonItem itemWithAttributes:dict4];
     
-    tabBarButtonItem04.requireCertificationAuthority = YES;
+//    tabBarButtonItem04.requireCertificationAuthority = YES;
     
     
-    // 玩吧
+    // Me(Profile)
     NSMutableDictionary *dict5 = [NSMutableDictionary dictionaryWithCapacity:2];
     
-    dict5[HCTabBarButtonNormalImageAttributeName] = [UIImage imageNamed:@"tabbar_icon_more"];
+    dict5[HCTabBarButtonNormalImageAttributeName] = [UIImage imageNamed:@"tabbar_profile"];
     
     
-    dict5[HCTabBarButtonSelectedImageAttributeName] = [UIImage imageNamed:@"tabbar_icon_more_click"];
+    dict5[HCTabBarButtonSelectedImageAttributeName] = [UIImage imageNamed:@"tabbar_profile_selected"];
     
     // Title Message
     //    dict5[HCTabBarTitleFontAttributeName] = [UIFont systemFontOfSize:QZoneTabBarTitleDefaultFontSize];   // 需要全局设置一次
     
-    dict5[HCTabBarTitleNormalAttributeName] = @"玩吧";
+    dict5[HCTabBarTitleNormalAttributeName] = @"Me";
     
     //    dict2[HCTabBarTitleNormalForegroundColorAttributeName] = [UIColor colorWithHexString:WBTabBarTitleNormalColorString];
     
@@ -192,6 +214,9 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     
     
     HCTabBarButtonItem *tabBarButtonItem05 = [HCTabBarButtonItem itemWithAttributes:dict5];
+    
+    // 设置需要权限验证
+    tabBarButtonItem05.requireCertificationAuthority = YES;
     
     HCTabBarBadgeItem *tabBarBadgeItem01 = [HCTabBarBadgeItem badgeItem];
     //    tabBarBadgeItem01.value = @"88899";
@@ -203,8 +228,9 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     //    tabBarBadgeItem01.backgroundImage = [UIImage imageNamed:@"mgj_tabbar_badge"];
     
     HCTabBarBadgeItem *tabBarBadgeItem02 = [HCTabBarBadgeItem badgeItem];
-    tabBarBadgeItem02.value = @"88";
+    tabBarBadgeItem02.value = @"99";
     tabBarButtonItem02.tabBarBadgeItem = tabBarBadgeItem02;
+    
     
     HCTabBarBadgeItem *tabBarBadgeItem04 = [HCTabBarBadgeItem badgeItem];
     
@@ -218,7 +244,7 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     tabBarButtonItem04.tabBarBadgeItem = tabBarBadgeItem04;
     
     HCTabBarBadgeItem *tabBarBadgeItem05 = [HCTabBarBadgeItem badgeItem];
-    tabBarBadgeItem05.value = @"888";
+    tabBarBadgeItem05.value = @"999";
     //    tabBarBadgeItem05.backgroundImage = [UIImage imageNamed:@"NewYearHonbao_Button"];
     
     tabBarBadgeItem05.badgeInsetEdgesLeft = 5;
@@ -280,7 +306,9 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     
     //    tabBarItem.othersDistinctiveEvent = YES;
     
-    hc_tabBar.tabBarItem = tabBarItem;
+    tabBarItem.buttonEdgesBottom = 2.0f;
+    
+    hc_tabBar.tabBarItem = tabBarItem;  // 死循环 
     
     
     //#warning 外面创建 HCTabBar 不需要手动添加，否则会出现诡异问题 ！！！，只需要创建就可以了！！！
@@ -296,7 +324,7 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
         
         HCLog(@"tabBarHandleRequireCertificationAuthorityBlock # willSelectIndex=%ld, originalIndex=%ld", willSelectIndex, originalIndex);
         
-        if (willSelectIndex == 3) {
+        if (willSelectIndex == 4) {
             
             NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"User"];
             
@@ -313,19 +341,13 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
                 // weakSelf
                 
                 // 未登入，首先需要登入
-//                UINavigationController *nc = [[UIStoryboard storyboardWithName:@"QZLogin" bundle:nil] instantiateInitialViewController];
-                
-#warning  这里可能有问题 ！！！
-                HCNavigationController *nc = [[HCNavigationController alloc] init];
-//                hc.rootViewController =
                 
                 WBLoginViewController *vc = [[WBLoginViewController alloc] init];
                 
                 vc.tabIndex = willSelectIndex;
                 vc.hc_tabBarController = weakSelf;
-                [weakSelf presentViewController:nc animated:YES completion:nil];
-                
-                
+                [weakSelf presentViewController:vc animated:YES completion:nil];
+
                 
                 return NO;
                 
@@ -456,36 +478,20 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
             
             //            [weakSelf in_cameraWithButton:tabBarButton];
             
+            // 微博
+            [weakSelf presentPlus];
         }
     };
     
     
 }
 
-//- (void)handleLogin{
-//
-//    // 未登入
-//
-//    UIViewController *vc = [UIStoryboard storyboardWithName:@"QZLogin" bundle:nil].instantiateInitialViewController;
-//
-//    // Application tried to present a nil modal view controller on target <QZTabBarController: 0x1445116b0>
-//
-//    NSLog(@"handleLogin # vc=%@", vc);
-//
-//    [self presentViewController:vc animated:YES completion:nil];
-//}
-
+// +
 - (void)presentPlus{
     
-    // 蘑菇街 ＋
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MGJPlus" bundle:nil];
-//    
-//    MGJPlusViewController *viewController = storyboard.instantiateInitialViewController;
-//    
-//    [self presentViewController:viewController animated:NO completion:nil];
-//    
-    
-    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"WBPlus" bundle:nil];
+    WBPlusViewController *viewController = storyboard.instantiateInitialViewController;
+    [self presentViewController:viewController animated:NO completion:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -707,7 +713,29 @@ static NSString *const WBTabBarTitleSelectedColorString = @"#FF8200";
     return nil; //
 }
 
-
+ /**
+ *  @author HeroCao, 15-08-14 10:08:08
+ *
+ *  为NavigationController添加ChildViewController，纯代码的方式，必须首先给NavigationController添加ChildViewController
+ *
+ *  @param childController childController
+ *  @param title           标题
+ */
+- (void)addChildViewControllerForNavigationController:(UIViewController *)childController title:(NSString *)title{
+    
+    // childController.title 相当于 childController.navigationItem.title = title 和 child.tabBarItem.title = title ;
+    childController.title = title;
+    
+    // HCNavigationController
+    HCNavigationController *navigationController = [[HCNavigationController alloc] init];
+    
+    [navigationController addChildViewController:childController];
+    
+    [self addChildViewController:navigationController];
+    
+//    HCLog(@"self.viewControllers.count=%ld, navigationController.topViewController=%@", self.viewControllers.count, navigationController.topViewController);
+    
+}
 
 
 @end
