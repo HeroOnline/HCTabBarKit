@@ -11,7 +11,7 @@
 邮箱：heroonlinecao@gmail.com、heroonlinecao@126.com  <br/>
 QQ群：482682853，验证信息：HCTabBarKit <br/><br/>
 
-<p style='color:Red'>Swift版本即将上线</p> <br/><br/>
+#<a href='#'><b>Swift版本即将上线</br></a> <br/><br/>
 
 #Requirements【要求】
 iOS 7.0+ 、Xcode 6.0＋
