@@ -5,11 +5,13 @@
 天朝以及全球最牛逼的TabBar框架：<b><a href='https://github.com/HeroOnline/HCTabBarKit'>HCTabBarKit<a/></b>
 
 
-支持网易新闻、天猫、支付宝、淘宝、京东、易信、陌陌、知乎、美团、1号店、QQ空间、微视、in、喜马拉雅、微博、蘑菇街、美丽说、聚美优品、简书、QQ、微信、36氪 等等TabBar功能 <br/><br/>
+支持网易新闻、天猫、支付宝、淘宝、京东、易信、陌陌、知乎、美团、1号店、QQ空间、微视、in、喜马拉雅、微博、蘑菇街、美丽说、聚美优品、简书、QQ、微信、36氪 等App的 TabBar 功能 <br/><br/>
 
 作者：<a href='https://github.com/HeroOnline'>HeroCao</a> <br/>
 邮箱：heroonlinecao@gmail.com、heroonlinecao@126.com  <br/>
 QQ群：482682853，验证信息：HCTabBarKit <br/><br/>
+
+<div color='red'><b><Swift版本即将上线</b></div> <br/><br/>
 
 #Requirements【要求】
 iOS 7.0+ 、Xcode 6.0＋
