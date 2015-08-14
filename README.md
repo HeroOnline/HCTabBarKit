@@ -16,7 +16,7 @@ iOS 7.0+ 、Xcode 6.0＋
 
 
 ## <a id="Introduction"></a> Introduction【介绍】
-- 支持 纯代码、单个Storyboard、多个Storyboard开发方式<br/>
+- 支持 纯代码、单个Storyboard、<b color='red'>多个Storyboard开发方式</b><br/>
 多个Storyboard方式，彻底解决多人团队开发中，基于一个Storyboard开发，频繁出现代码冲突问题！
 
 - 支持 BadgeValue 、Badge、单击可以切换Tab、单击可以刷新当前Tab的UITableView数据、双击可以切换Tab、双击Tab可以刷新当前Tab的UITableView数据、中间Tab为特殊效果、中间Tab的图片可以旋转和缩放、自定义Badge的位置、调整Tab背景图片模式、动态改变Badge的图片、动态BadgeValue的字体大小和颜色、可以设置Tab高亮背景图片、可以设置Tab正常状态背景图片
