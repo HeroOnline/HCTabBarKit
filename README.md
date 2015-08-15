@@ -35,7 +35,7 @@ iOS 7.0+ 、Xcode 6.0＋
 
 - 天猫：Badge、需要权限验证、中间Tab有特殊效果（动画效果）<br/><br/>
 
-- 支付宝：Badge <br/><br/>
+- 支付宝：Badge、BadgeValue <br/><br/>
 
 - 淘宝：Badge、需要权限验证、不同Tab的切换，有的Tab第一次单击／双击是切换Tab，切换之后单击／双击是滚动到UITableView最顶部 <br/><br/>
 
@@ -45,7 +45,7 @@ iOS 7.0+ 、Xcode 6.0＋
 
 - 陌陌：Badge、BadgeValue、需要权限验证 <br/><br/>
 
-- 知乎：Badge、BadgeValue、需要权限、双击Tab刷新UITableView数据 <br/><br/>
+- 知乎：Badge、BadgeValue、需要权限验证、双击Tab刷新UITableView数据 <br/><br/>
 
 - 美团：Badge、BadgeValue、需要权限验证、不同Tab的切换，有的Tab第一次单击／双击是切换Tab，切换之后单击／双击是滚动到UITableView最顶部 <br/><br/>
 
