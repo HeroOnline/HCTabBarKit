@@ -2,7 +2,7 @@
 
 #Summary【摘要】
 
-天朝以及全球最牛逼的TabBar框架：<b><a href='https://github.com/HeroOnline/HCTabBarKit'>HCTabBarKit<a/></b>
+天朝以及全球功能最强大、最好用的TabBar框架：<b><a href='https://github.com/HeroOnline/HCTabBarKit'>HCTabBarKit<a/></b>
 
 
 支持网易新闻、天猫、支付宝、淘宝、京东、易信、陌陌、知乎、美团、1号店、QQ空间、微视、in、喜马拉雅、微博、蘑菇街、美丽说、聚美优品、简书、QQ、微信、36氪 等App的 TabBar 功能 <br/><br/>
